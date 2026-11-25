@@ -82,9 +82,11 @@ TABLE_LIST = [
     ("1.1", "Business Symptoms versus the Core Management Problem"),
     ("1.2", "Preliminary Evidence on Delayed Price Responses"),
     ("1.3", "Research Questions and Matching Research Objectives"),
+    ("1.4", "Positioning of This Study against Prior Studies"),
     ("2.1", "Summary of Prior Empirical Studies"),
-    ("2.2", "Identification of Research Variables"),
-    ("2.3", "Summary of Hypotheses"),
+    ("2.2", "Theoretical Predictions for Earnings Surprise and PEAD"),
+    ("2.3", "Identification of Research Variables"),
+    ("2.4", "Summary of Hypotheses"),
     ("3.1", "Research Design Elements"),
     ("3.2", "Operational Definitions of Variables"),
     ("3.3", "Operationalization Matrix"),
@@ -123,6 +125,7 @@ glossary = [
     ("IHSG", "Indeks Harga Saham Gabungan (Jakarta Composite Index)"),
     ("KSEI", "Kustodian Sentral Efek Indonesia (Indonesian Central Securities Depository)"),
     ("LQ45", "IDX index of 45 stocks with high liquidity and large market capitalization"),
+    ("MSCI", "Global index provider whose market classification guides international funds"),
     ("OJK", "Otoritas Jasa Keuangan (Financial Services Authority)"),
     ("PEAD", "Post-earnings announcement drift"),
     ("PSAK", "Pernyataan Standar Akuntansi Keuangan (Indonesian accounting standards)"),
@@ -191,6 +194,23 @@ T.p("Indonesia is a relevant setting for answering that question. Indonesian acc
     "recognize the value implications of firm announcements in an environment of thin trading. "
     "Ramdhani (2021) finds that the components of the earnings surprise are related to PEAD on "
     "the IDX over 2017–2019.")
+T.p("The question has become urgent in 2026, because the quality of Indonesia’s market "
+    "information environment is now under international scrutiny. Moody’s changed the outlook "
+    "on Indonesia’s Baa2 sovereign rating to negative in February 2026, citing weaker "
+    "governance and reduced policy predictability, and Fitch changed its outlook on "
+    "Indonesia’s BBB rating to negative in March 2026 (The Jakarta Post, 2026; The Star, "
+    "2026). In October 2026, MSCI proposed reclassifying the MSCI Indonesia Indexes from "
+    "Emerging Market to Standalone Market status. MSCI reported that investors had raised "
+    "concerns about “persistent opacity in shareholding structures and suspected coordinated "
+    "trading behavior”, and that despite reforms, including disclosure of shareholders above "
+    "1% and a roadmap to a 15% minimum free float, concerns remained about market "
+    "dysfunction (MSCI, 2026). MSCI will decide by June 2027. All of these signals concern "
+    "the same underlying issue: whether public information is reflected in Indonesian stock "
+    "prices quickly and fairly. PEAD is a direct, measurable indicator of that issue, and Ho "
+    "et al. (2024) show that the drift is larger where ownership is concentrated in insiders "
+    "and information is more opaque. Evidence on how efficiently earnings news is priced in "
+    "Indonesia’s leading stocks is therefore relevant not only to investors but to the "
+    "credibility of the market as a whole.")
 T.p("These Indonesian studies, however, use samples that span the whole exchange, where many "
     "stocks trade thinly. Chordia et al. (2009) show that PEAD is concentrated in illiquid stocks "
     "and that transaction costs absorb 70–100% of the paper profit of trading on it, while "
@@ -233,12 +253,18 @@ T.table(
         ["Symptom 4",
          "Existing Indonesian evidence comes from whole-market samples dominated by thinly "
          "traded stocks, so investors cannot tell whether the observed drift is tradable."],
+        ["Symptom 5",
+         "In 2026, Moody’s and Fitch moved Indonesia’s rating outlook to negative and MSCI "
+         "proposed downgrading Indonesia to Standalone Market status, citing opaque "
+         "shareholding structures and market dysfunction (MSCI, 2026; The Jakarta Post, 2026)."],
         ["Core management problem",
          "Fund managers, securities analysts and retail investors who trade LQ45 stocks do not "
          "know whether earnings news is fully priced at the announcement or only gradually "
          "afterwards. They therefore cannot judge whether earnings-surprise information should "
-         "enter their post-announcement buy, sell and rebalancing decisions, and regulators "
-         "cannot judge whether earnings disclosure is efficiently absorbed by the market."],
+         "enter their post-announcement buy, sell and rebalancing decisions. Regulators (OJK "
+         "and the IDX), who must show international investors that the market works, lack "
+         "evidence on whether earnings disclosure is efficiently absorbed even in the "
+         "market’s leading stocks."],
         ["Research problem",
          "Does the earnings surprise of non-financial LQ45 stocks have a positive effect on "
          "their cumulative abnormal return in the 60 trading days after the announcement "
@@ -343,9 +369,55 @@ T.items([
     "important segment, which can inform disclosure regulation and investor-education "
     "programs.",
 ], style="alpha")
+T.h3("1.4.4 Societal Impact")
+T.p("The study is motivated by the public good as much as by trading. Its societal value "
+    "lies in four areas:")
+T.items([
+    "**Fairness for retail investors.** When prices adjust slowly, investors who trade on "
+    "stale prices, typically less-informed individuals, buy too high or sell too low, while "
+    "faster and better-informed traders capture the difference. With more than 20 million "
+    "investor accounts in Indonesia (Kontan, 2025), most of them new retail investors, the "
+    "speed at which public information is priced is a question of fairness. Measuring PEAD "
+    "shows how large this hidden transfer could be in the most widely held stocks.",
+    "**Market credibility and access to capital.** MSCI’s proposed reclassification and the "
+    "negative rating outlooks question whether the Indonesian market functions well (MSCI, "
+    "2026). A downgrade would push passive foreign funds to sell Indonesian stocks, raising "
+    "the cost of capital for listed firms that finance investment and employment. Objective "
+    "evidence on information efficiency can help authorities show where the market works and "
+    "where reform is still needed.",
+    "**Evaluating transparency reforms.** The 2026 reforms (1% shareholder disclosure and a "
+    "15% minimum free float) aim to make information more transparent. This study provides "
+    "a 2016–2025 baseline of how efficiently earnings news was priced before the reforms, "
+    "against which their effect can later be judged.",
+    "**Financial literacy.** Clear evidence on whether prices keep moving after earnings news "
+    "gives educators and the IDX investor-education programs concrete material on how to read "
+    "and use financial reports, instead of relying on rumours or social-media tips.",
+], style="alpha")
 
 T.h2("1.5 Research Novelty")
-T.p("This study differs from previous research in five respects:")
+T.p("Table 1.4 positions this study against the closest prior studies. It is the only one "
+    "that combines a quarterly earnings-surprise measure, the liquid LQ45 segment, the "
+    "standard quintile portfolio design and the most recent period.")
+T.caption_table("1.4", "Positioning of This Study against Prior Studies")
+T.table(
+    ["Study", "Market and sample", "Event and surprise measure", "Liquid segment only",
+     "Period"],
+    [
+        ["Ho et al. (2024)", "Vietnam, all non-financial firms", "Quarterly SUE quintiles",
+         "No", "2009–2020"],
+        ["Nainggolan (2025)", "IDX, 621 firms", "Annual release; market model, no surprise "
+                                                "sorting", "No", "FY 2018"],
+        ["Wijayana & Achjari (2020)", "IDX, announcing firms", "IT investment announcements",
+         "No", "2001–2016"],
+        ["Ramdhani (2021)", "IDX, all listed firms", "Unexpected cash flows and accruals",
+         "No", "2017–2019"],
+        ["**This study**", "**IDX, non-financial LQ45**", "**Quarterly SUE quintiles**",
+         "**Yes**", "**2016–2025**"],
+    ],
+    widths=[3.2, 3.2, 3.8, 1.8, 2.0], size=9.5, align_center_cols=(3, 4))
+T.source("Source: Compiled by the author from the cited studies.")
+T.p("Building on this positioning, the study differs from previous research in six "
+    "respects:")
 T.items([
     "**First earnings-surprise portfolio test of PEAD within the LQ45 index.** Previous "
     "Indonesian studies examine the whole exchange (Nainggolan, 2025; Ramdhani, 2021) or other "
@@ -362,6 +434,11 @@ T.items([
     "question.",
     "**A recent, longer period.** The 2016–2025 window covers the COVID-19 shock and the "
     "recent surge in retail participation, a period not covered by the studies above.",
+    "**Timely evidence for a market under scrutiny.** The study delivers a measure of "
+    "information efficiency in Indonesia’s leading stocks at the moment MSCI and the rating "
+    "agencies are questioning the market’s transparency (MSCI, 2026). It links an "
+    "established finance anomaly to a live policy debate and provides a pre-reform baseline "
+    "for evaluating the 2026 transparency reforms.",
     "**Methodological care specific to Indonesia.** Discrete quarterly EPS is derived from "
     "year-to-date interim reports, historical LQ45 constituent lists are used to avoid "
     "survivorship bias, and the quarter, rather than the firm-quarter, is used as the unit of "
@@ -495,7 +572,7 @@ T.table(
     widths=[0.8, 2.8, 3.6, 3.8, 3.0], size=9.5, align_center_cols=(0,))
 T.source("Source: Compiled by the author from the cited studies.")
 T.h3("2.1.9 Research Gap")
-T.p("The synthesis reveals four gaps. First, an **empirical gap**: Ho et al. (2024) leave "
+T.p("The synthesis reveals five gaps. First, an **empirical gap**: Ho et al. (2024) leave "
     "open whether PEAD exists in a market with accounting closer to international standards, "
     "and no study has tested the earnings-surprise portfolio design among LQ45 stocks. "
     "Second, a **tradability gap**: Indonesian evidence comes from whole-market samples in "
@@ -505,8 +582,10 @@ T.p("The synthesis reveals four gaps. First, an **empirical gap**: Ho et al. (20
     "& Achjari, 2020) or decomposed surprise measures (Ramdhani, 2021), rather than the "
     "standard quarterly SUE quintile spread that allows comparison with international results. "
     "Fourth, a **temporal gap**: no study covers the 2016–2025 period, which includes the "
-    "COVID-19 shock and the recent surge in retail participation. This study addresses all "
-    "four gaps by applying the design of Ho et al. (2024) to non-financial LQ45 stocks over "
+    "COVID-19 shock and the recent surge in retail participation. Fifth, a **policy-relevance "
+    "gap**: although MSCI and the rating agencies question the transparency of the Indonesian "
+    "market (MSCI, 2026), no study provides recent evidence on how efficiently earnings news "
+    "is priced in its leading stocks. This study addresses all five gaps by applying the design of Ho et al. (2024) to non-financial LQ45 stocks over "
     "2016–2025.")
 
 T.h2("2.2 Theoretical Framework and Conceptual Model")
@@ -541,7 +620,45 @@ T.p("Shleifer and Vishny (1997) explain that mispricing can persist because arbi
     "drift among these stocks. The hypotheses below follow the underreaction and "
     "limited-attention predictions; limits-to-arbitrage theory explains why the test in LQ45 "
     "is demanding and why a non-significant result would still be informative.")
-T.h3("2.2.5 Conceptual Model")
+T.h3("2.2.5 Information Environment and Transparency")
+T.p("The speed at which prices absorb earnings news also depends on the quality of the "
+    "information environment. Drift is weaker where accounting information is more "
+    "transparent and comparable (Hung et al., 2015) and stronger where ownership is "
+    "concentrated among insiders, because concentrated ownership makes earnings more opaque "
+    "and harder for outside investors to interpret (Ho et al., 2024). Insiders whose trades "
+    "confirm the earnings news can also prolong the drift (Dargenidou et al., 2018). This "
+    "perspective connects PEAD to the 2026 debate on Indonesian market transparency: concerns "
+    "about opaque shareholding structures (MSCI, 2026) are, in theoretical terms, concerns "
+    "about an information environment that slows the incorporation of public news into "
+    "prices. A drift among LQ45 stocks would indicate that such frictions affect even the "
+    "market’s most visible firms.")
+T.h3("2.2.6 Integrating the Theories")
+T.p("The theories make competing predictions, which is what makes the test informative. "
+    "Table 2.2 summarizes what each theory predicts for the relation between earnings surprise "
+    "and post-announcement returns among LQ45 stocks.")
+T.caption_table("2.2", "Theoretical Predictions for Earnings Surprise and PEAD")
+T.table(
+    ["Theory", "Core argument", "Prediction for LQ45 stocks", "Hypotheses"],
+    [
+        ["Efficient market hypothesis (Fama, 1970)",
+         "Public information is priced fully and immediately",
+         "Reaction at announcement only; no drift", "Null of H1; supports H2"],
+        ["Underreaction (Bernard & Thomas, 1990; Barberis et al., 1998)",
+         "Investors update too slowly to earnings news",
+         "Reaction at announcement plus drift in the same direction", "H1, H2, H3"],
+        ["Limited attention (Hirshleifer et al., 2009)",
+         "Scarce attention delays processing of news",
+         "Weaker initial reaction, stronger drift", "H1, H3"],
+        ["Limits to arbitrage (Shleifer & Vishny, 1997; Chordia et al., 2009)",
+         "Costly arbitrage lets mispricing persist",
+         "Smaller drift in liquid stocks than in illiquid stocks", "Explains a null H1"],
+        ["Information environment (Hung et al., 2015; Ho et al., 2024)",
+         "Opacity slows interpretation of earnings",
+         "Drift possible even in large stocks if opacity is high", "H1, H3"],
+    ],
+    widths=[3.6, 3.6, 4.0, 2.8], size=9.5)
+T.source("Source: Compiled by the author.")
+T.h3("2.2.7 Conceptual Model")
 T.p("Figure 2.1 shows the conceptual model. The independent variable is the earnings surprise "
     "(X), with two dimensions: its direction (positive or negative) and its magnitude. The "
     "dependent variable is post-earnings announcement drift (Y), measured mainly by "
@@ -550,12 +667,12 @@ T.p("Figure 2.1 shows the conceptual model. The independent variable is the earn
 T.figure(figdir / "fig_conceptual_model.png", "2.1", "Conceptual Model of the Study",
          width_cm=14.5, source="Source: Developed by the author based on Bernard and Thomas "
          "(1989) and Ho et al. (2024).")
-T.p("Table 2.2 identifies the role of each variable. The model has no mediating or "
+T.p("Table 2.3 identifies the role of each variable. The model has no mediating or "
     "moderating variable by design: the purpose of the study is to establish whether PEAD "
     "exists in LQ45 before examining what drives it, which follows the first step of Ho et "
     "al. (2024). Quarter fixed effects in the regression test control for shocks that affect "
     "all stocks in the same quarter, such as the COVID-19 crash in 2020.")
-T.caption_table("2.2", "Identification of Research Variables")
+T.caption_table("2.3", "Identification of Research Variables")
 T.table(
     ["Role", "Variable", "Measure", "Basis"],
     [
@@ -608,9 +725,9 @@ T.p("PEAD is defined as a drift in the direction of the surprise. A positive spr
     "Hence:")
 T.p("**H3a:** The CAR(+2,+61) of the highest-surprise quintile (D5) is positive.", indent=0)
 T.p("**H3b:** The CAR(+2,+61) of the lowest-surprise quintile (D1) is negative.", indent=0)
-T.p("All hypotheses are directional and are therefore tested with one-tailed tests. Table 2.3 "
+T.p("All hypotheses are directional and are therefore tested with one-tailed tests. Table 2.4 "
     "summarizes them.")
-T.caption_table("2.3", "Summary of Hypotheses")
+T.caption_table("2.4", "Summary of Hypotheses")
 T.table(
     ["Hypothesis", "Relationship", "Test statistic", "Expected sign"],
     [
@@ -928,6 +1045,9 @@ T.table(
         ["30-day window, CAR(+2,+31)", "Shows how much of the drift occurs in the first month"],
         ["Excluding 2020 quarters", "Removes the COVID-19 crash and recovery"],
         ["Median spread and Wilcoxon signed-rank test", "Limits the influence of outliers"],
+        ["Supplementary: Q1–Q3 2026 announcements (descriptive)",
+         "Shows whether the drift pattern changed during the 2026 MSCI and rating-agency "
+         "scrutiny; too few quarters for formal tests"],
     ],
     widths=[6.5, 7.5])
 T.source("Source: Compiled by the author.")
@@ -1041,6 +1161,9 @@ refs = [
     "Livnat, J., & Mendenhall, R. R. (2006). Comparing the post-earnings announcement drift "
     "for surprises calculated from analyst and time series forecasts. *Journal of Accounting "
     "Research, 44*(1), 177–205. https://doi.org/10.1111/j.1475-679X.2006.00196.x",
+    "MSCI. (2026, October 15). *MSCI launches a consultation on a proposal to reclassify "
+    "Indonesia from Emerging Market to Standalone Market status* [Press release]. "
+    "https://www.msci.com/downloads/documents/press-releases/media-room/Indonesia_PR_Oct_26.pdf",
     "Mendenhall, R. R. (2004). Arbitrage risk and post-earnings-announcement drift. *The "
     "Journal of Business, 77*(4), 875–894. https://doi.org/10.1086/422627",
     "Nainggolan, R. (2025). Examining the information efficiency of Indonesia equity market: "
@@ -1060,6 +1183,12 @@ refs = [
     "approach* (7th ed.). Wiley.",
     "Shleifer, A., & Vishny, R. W. (1997). The limits of arbitrage. *The Journal of Finance, "
     "52*(1), 35–55. https://doi.org/10.1111/j.1540-6261.1997.tb03807.x",
+    "The Jakarta Post. (2026, March 4). Fitch cuts country’s rating outlook to negative. "
+    "*The Jakarta Post*. https://www.thejakartapost.com/business/2026/03/04/"
+    "indonesia-media-report-fitch-cuts-countrys-rating-outlook-to-negative",
+    "The Star. (2026, February 6). Indonesian markets face more pressure after Moody’s cuts "
+    "outlook. *The Star*. https://www.thestar.com.my/business/business-news/2026/02/06/"
+    "indonesian-markets-face-more-pressure-after-moody039s-cuts-outlook",
     "Wijayana, S., & Achjari, D. (2020). Market reaction to the announcement of an information "
     "technology investment: Evidence from Indonesia. *Information & Management, 57*, "
     "103248. https://doi.org/10.1016/j.im.2019.103248",
