@@ -31,14 +31,15 @@ TITLE_EN = ("THE EFFECT OF EARNINGS SURPRISE ON POST-EARNINGS ANNOUNCEMENT DRIFT
             "EVIDENCE FROM LQ45 STOCKS ON THE INDONESIA STOCK EXCHANGE")
 
 # =============================================================== COVER (no number)
-T.centered("PROPOSAL TUGAS AKHIR", bold=True, space_after=18)
+T.centered("PROPOSAL TUGAS AKHIR", bold=True, space_after=12)
 T.centered(TITLE_ID, bold=True, space_after=8)
-T.centered(TITLE_EN, bold=True, italic=True, space_after=40)
+T.centered(TITLE_EN, bold=True, italic=True, space_after=24)
 T.centered("Final Research Proposal (Chapters I–III)", bold=True)
 T.centered("Disusun untuk memenuhi tugas akhir mata kuliah Business Research Methods",
            bold=True)
 T.centered("Dosen Pengampu", bold=True)
-T.centered("Paramita Her Astuti, S.E., M.Sc.", bold=True, space_after=30)
+T.centered("Paramita Her Astuti, S.E., M.Sc.", bold=True)
+T.centered("Dr. Raeef Abdullah Altamimi, M.Acc.", bold=True, space_after=18)
 if logo.exists():
     par = doc.add_paragraph()
     par.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -46,10 +47,10 @@ if logo.exists():
 else:
     T.centered("[Lambang UGM, 5,5 cm × 5,71 cm]", italic=True, space_before=60,
                space_after=60)
-T.centered("Oleh:", bold=True, space_before=30)
+T.centered("Oleh:", bold=True, space_before=18)
 T.centered("Azim Muzakki Hasnan", bold=True)
-T.centered("24/539405/SV/24597", bold=True, space_after=40)
-T.centered("[NAMA PROGRAM STUDI]", bold=True)
+T.centered("24/539405/SV/24597", bold=True, space_after=24)
+T.centered("PROGRAM STUDI PERBANKAN", bold=True)
 T.centered("DEPARTEMEN EKONOMIKA DAN BISNIS", bold=True)
 T.centered("SEKOLAH VOKASI", bold=True)
 T.centered("UNIVERSITAS GADJAH MADA", bold=True)
